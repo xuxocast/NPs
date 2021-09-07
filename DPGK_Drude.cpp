@@ -9,7 +9,6 @@
 //   the estimated error. The spectrum is written to a file named "dpdw*.dat".
 //   Also, the integral in frequency space is calculated via Gauss - Kronrod using
 //   a partition set to fast convergence. The results are written to a file named "DP*.dat". 
-//   All this for each multipole moment induced in the NP.
 //
 //
 //          By Jesús Castrejon, jcastrejon@ciencias.unam.mx (27/10/2018)
@@ -17,14 +16,6 @@
 //*****************************************************************************************************************
 //*****************************************************************************************************************
 
-#include <iostream>                                                // Standart i/o C++ library
-#include <complex>                                                 // Compĺex numbers
-#include <fstream>                                                 // i/o to file
-#include <boost/math/special_functions/bessel.hpp>                 // BOOST LIBRARIES:  1. BesselK in external fields
-#include <boost/math/special_functions/beta.hpp>                   // Beta function for recursive relation in scatterred fields
-#include <boost/math/special_functions/legendre.hpp>               // Lengendre Plm
-#include <boost/math/quadrature/gauss_kronrod.hpp>                 // Gauss Konrod Quadrature for surface integral of T.da
-#include <boost/math/quadrature/exp_sinh.hpp>
 #include "IN11.h"
 
 // Spherical Bessel (Hankel) funcions with *complex argument* (very important) for the scatterred fields. 
